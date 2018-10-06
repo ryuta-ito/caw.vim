@@ -52,6 +52,7 @@ function! s:oneline() abort
   \   'conf': '#',
   \   'config': '#',
   \   'conkyrc': '#',
+  \   'coq': '//',
   \   'cpp': '//',
   \   'crontab': '#',
   \   'cs': '//',
@@ -317,6 +318,7 @@ function! s:wrap_oneline() abort
   \   'ch': ['/*', '*/'],
   \   'clean': ['/*', '*/'],
   \   'clipper': ['/*', '*/'],
+  \   'coq': ['(*', '*)'],
   \   'cpp': ['/*', '*/'],
   \   'cs': ['/*', '*/'],
   \   'd': ['/*', '*/'],
@@ -399,6 +401,7 @@ function! s:wrap_multiline() abort
   return {
   \   'arduino': {'left': '/*', 'top': '*', 'bottom': '*', 'right': '*/'},
   \   'c': {'left': '/*', 'top': '*', 'bottom': '*', 'right': '*/'},
+  \   'coq': {'left': '(*', 'top': '*', 'bottom': '*', 'right': '*)'},
   \   'cpp': {'left': '/*', 'top': '*', 'bottom': '*', 'right': '*/'},
   \   'perl': {'left': '#', 'top': '#', 'bottom': '#', 'right': '#'},
   \   'ruby': {'left': '#', 'top': '#', 'bottom': '#', 'right': '#'},
